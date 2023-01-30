@@ -1,0 +1,208 @@
+Preprocessing Datasets:
+Human database contains 12000 normal pngs and 12000 one color pngs. 
+For the input dataset to train the cnn we use only the one color dataset -> 12000 pictures.
+
+Human Database: 24000 files
+Human Annotations: 6000 files
+
+Plain paths -> 12000 and One Color paths -> 6000
+
+
+Configuration of the CNN:
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [1, 8, 196, 196]             208
+              ReLU-2           [1, 8, 196, 196]               0
+         LayerNorm-3           [1, 8, 196, 196]          76,832
+         MaxPool2d-4             [1, 8, 98, 98]               0
+            Conv2d-5            [1, 16, 94, 94]           3,216
+              ReLU-6            [1, 16, 94, 94]               0
+         MaxPool2d-7            [1, 16, 47, 47]               0
+           Flatten-8                 [1, 35344]               0
+            Linear-9                   [1, 512]      18,096,640
+             ReLU-10                   [1, 512]               0
+           Linear-11                     [1, 8]           4,104
+================================================================
+Total params: 18,181,000
+Trainable params: 18,181,000
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.15
+Forward/backward pass size (MB): 10.32
+Params size (MB): 69.36
+Estimated Total Size (MB): 79.83
+----------------------------------------------------------------
+
+
+Starting training:
+
+12000
+-----------------------------------
+Fold 1
+-----------------------------------
+Epoch:1/20	 Avg. Training Loss:0.04325	Avg. Test Loss:0.01689
+Epoch:2/20	 Avg. Training Loss:0.01533	Avg. Test Loss:0.01533
+Epoch:3/20	 Avg. Training Loss:0.01522	Avg. Test Loss:0.01547
+Epoch:4/20	 Avg. Training Loss:0.01502	Avg. Test Loss:0.01532
+Epoch:5/20	 Avg. Training Loss:0.01484	Avg. Test Loss:0.01552
+Epoch:6/20	 Avg. Training Loss:0.01473	Avg. Test Loss:0.01502
+Epoch:7/20	 Avg. Training Loss:0.01460	Avg. Test Loss:0.01524
+Epoch:8/20	 Avg. Training Loss:0.01441	Avg. Test Loss:0.01480
+Epoch:9/20	 Avg. Training Loss:0.01433	Avg. Test Loss:0.01494
+Epoch:10/20	 Avg. Training Loss:0.01443	Avg. Test Loss:0.01564
+Epoch:11/20	 Avg. Training Loss:0.01425	Avg. Test Loss:0.01574
+Epoch:12/20	 Avg. Training Loss:0.01406	Avg. Test Loss:0.01486
+Epoch:13/20	 Avg. Training Loss:0.01398	Avg. Test Loss:0.01567
+Epoch:14/20	 Avg. Training Loss:0.01393	Avg. Test Loss:0.01479
+Epoch:15/20	 Avg. Training Loss:0.01385	Avg. Test Loss:0.01490
+Epoch:16/20	 Avg. Training Loss:0.01373	Avg. Test Loss:0.01480
+Epoch:17/20	 Avg. Training Loss:0.01374	Avg. Test Loss:0.01494
+Epoch:18/20	 Avg. Training Loss:0.01347	Avg. Test Loss:0.01482
+Epoch:19/20	 Avg. Training Loss:0.01343	Avg. Test Loss:0.01515
+Epoch:20/20	 Avg. Training Loss:0.01326	Avg. Test Loss:0.01489
+-----------------------------------
+Fold 2
+-----------------------------------
+Epoch:1/20	 Avg. Training Loss:0.01389	Avg. Test Loss:0.01304
+Epoch:2/20	 Avg. Training Loss:0.01346	Avg. Test Loss:0.01413
+Epoch:3/20	 Avg. Training Loss:0.01349	Avg. Test Loss:0.01330
+Epoch:4/20	 Avg. Training Loss:0.01319	Avg. Test Loss:0.01400
+Epoch:5/20	 Avg. Training Loss:0.01323	Avg. Test Loss:0.01353
+Epoch:6/20	 Avg. Training Loss:0.01301	Avg. Test Loss:0.01367
+Epoch:7/20	 Avg. Training Loss:0.01282	Avg. Test Loss:0.01367
+Epoch:8/20	 Avg. Training Loss:0.01273	Avg. Test Loss:0.01508
+Epoch:9/20	 Avg. Training Loss:0.01270	Avg. Test Loss:0.01357
+Epoch:10/20	 Avg. Training Loss:0.01259	Avg. Test Loss:0.01470
+Epoch:11/20	 Avg. Training Loss:0.01242	Avg. Test Loss:0.01416
+Epoch:12/20	 Avg. Training Loss:0.01250	Avg. Test Loss:0.01383
+Epoch:13/20	 Avg. Training Loss:0.01220	Avg. Test Loss:0.01427
+Epoch:14/20	 Avg. Training Loss:0.01204	Avg. Test Loss:0.01402
+Epoch:15/20	 Avg. Training Loss:0.01200	Avg. Test Loss:0.01428
+Epoch:16/20	 Avg. Training Loss:0.01201	Avg. Test Loss:0.01423
+Epoch:17/20	 Avg. Training Loss:0.01177	Avg. Test Loss:0.01413
+Epoch:18/20	 Avg. Training Loss:0.01154	Avg. Test Loss:0.01414
+Epoch:19/20	 Avg. Training Loss:0.01159	Avg. Test Loss:0.01415
+Epoch:20/20	 Avg. Training Loss:0.01150	Avg. Test Loss:0.01477
+-----------------------------------
+Fold 3
+-----------------------------------
+Epoch:1/20	 Avg. Training Loss:0.01209	Avg. Test Loss:0.01110
+Epoch:2/20	 Avg. Training Loss:0.01179	Avg. Test Loss:0.01118
+Epoch:3/20	 Avg. Training Loss:0.01160	Avg. Test Loss:0.01135
+Epoch:4/20	 Avg. Training Loss:0.01153	Avg. Test Loss:0.01213
+Epoch:5/20	 Avg. Training Loss:0.01151	Avg. Test Loss:0.01243
+Epoch:6/20	 Avg. Training Loss:0.01110	Avg. Test Loss:0.01220
+Epoch:7/20	 Avg. Training Loss:0.01093	Avg. Test Loss:0.01208
+Epoch:8/20	 Avg. Training Loss:0.01078	Avg. Test Loss:0.01230
+Epoch:9/20	 Avg. Training Loss:0.01076	Avg. Test Loss:0.01305
+Epoch:10/20	 Avg. Training Loss:0.01074	Avg. Test Loss:0.01211
+Epoch:11/20	 Avg. Training Loss:0.01030	Avg. Test Loss:0.01215
+Epoch:12/20	 Avg. Training Loss:0.01002	Avg. Test Loss:0.01229
+Epoch:13/20	 Avg. Training Loss:0.01002	Avg. Test Loss:0.01274
+Epoch:14/20	 Avg. Training Loss:0.00977	Avg. Test Loss:0.01247
+Epoch:15/20	 Avg. Training Loss:0.00985	Avg. Test Loss:0.01238
+Epoch:16/20	 Avg. Training Loss:0.00941	Avg. Test Loss:0.01305
+Epoch:17/20	 Avg. Training Loss:0.00915	Avg. Test Loss:0.01282
+Epoch:18/20	 Avg. Training Loss:0.00920	Avg. Test Loss:0.01254
+Epoch:19/20	 Avg. Training Loss:0.00891	Avg. Test Loss:0.01285
+Epoch:20/20	 Avg. Training Loss:0.00891	Avg. Test Loss:0.01264
+-----------------------------------
+Fold 4
+-----------------------------------
+Epoch:1/20	 Avg. Training Loss:0.00980	Avg. Test Loss:0.00831
+Epoch:2/20	 Avg. Training Loss:0.00949	Avg. Test Loss:0.00857
+Epoch:3/20	 Avg. Training Loss:0.00899	Avg. Test Loss:0.00890
+Epoch:4/20	 Avg. Training Loss:0.00870	Avg. Test Loss:0.00894
+Epoch:5/20	 Avg. Training Loss:0.00867	Avg. Test Loss:0.00987
+Epoch:6/20	 Avg. Training Loss:0.00830	Avg. Test Loss:0.00906
+Epoch:7/20	 Avg. Training Loss:0.00801	Avg. Test Loss:0.00924
+Epoch:8/20	 Avg. Training Loss:0.00772	Avg. Test Loss:0.00965
+Epoch:9/20	 Avg. Training Loss:0.00758	Avg. Test Loss:0.00992
+Epoch:10/20	 Avg. Training Loss:0.00736	Avg. Test Loss:0.01022
+Epoch:11/20	 Avg. Training Loss:0.00691	Avg. Test Loss:0.00966
+Epoch:12/20	 Avg. Training Loss:0.00676	Avg. Test Loss:0.00959
+Epoch:13/20	 Avg. Training Loss:0.00649	Avg. Test Loss:0.00985
+Epoch:14/20	 Avg. Training Loss:0.00623	Avg. Test Loss:0.00991
+Epoch:15/20	 Avg. Training Loss:0.00608	Avg. Test Loss:0.00992
+Epoch:16/20	 Avg. Training Loss:0.00589	Avg. Test Loss:0.01054
+Epoch:17/20	 Avg. Training Loss:0.00563	Avg. Test Loss:0.01048
+Epoch:18/20	 Avg. Training Loss:0.00533	Avg. Test Loss:0.01034
+Epoch:19/20	 Avg. Training Loss:0.00523	Avg. Test Loss:0.01021
+Epoch:20/20	 Avg. Training Loss:0.00488	Avg. Test Loss:0.01042
+-----------------------------------
+Fold 5
+-----------------------------------
+Epoch:1/20	 Avg. Training Loss:0.00644	Avg. Test Loss:0.00467
+Epoch:2/20	 Avg. Training Loss:0.00632	Avg. Test Loss:0.00493
+Epoch:3/20	 Avg. Training Loss:0.00552	Avg. Test Loss:0.00492
+Epoch:4/20	 Avg. Training Loss:0.00516	Avg. Test Loss:0.00518
+Epoch:5/20	 Avg. Training Loss:0.00494	Avg. Test Loss:0.00517
+Epoch:6/20	 Avg. Training Loss:0.00458	Avg. Test Loss:0.00568
+Epoch:7/20	 Avg. Training Loss:0.00436	Avg. Test Loss:0.00534
+Epoch:8/20	 Avg. Training Loss:0.00406	Avg. Test Loss:0.00571
+Epoch:9/20	 Avg. Training Loss:0.00400	Avg. Test Loss:0.00568
+Epoch:10/20	 Avg. Training Loss:0.00390	Avg. Test Loss:0.00559
+Epoch:11/20	 Avg. Training Loss:0.00354	Avg. Test Loss:0.00562
+Epoch:12/20	 Avg. Training Loss:0.00341	Avg. Test Loss:0.00686
+Epoch:13/20	 Avg. Training Loss:0.00318	Avg. Test Loss:0.00575
+Epoch:14/20	 Avg. Training Loss:0.00306	Avg. Test Loss:0.00591
+Epoch:15/20	 Avg. Training Loss:0.00287	Avg. Test Loss:0.00586
+Epoch:16/20	 Avg. Training Loss:0.00276	Avg. Test Loss:0.00592
+Epoch:17/20	 Avg. Training Loss:0.00254	Avg. Test Loss:0.00598
+Epoch:18/20	 Avg. Training Loss:0.00243	Avg. Test Loss:0.00604
+Epoch:19/20	 Avg. Training Loss:0.00240	Avg. Test Loss:0.00632
+Epoch:20/20	 Avg. Training Loss:0.00218	Avg. Test Loss:0.00600
+Done!
+
+
+Performance report:
+
+Performance of 5 fold cross validation
+Average Training Loss: 0.00995 		 Average Test Loss: 0.01138
+AMAD: 77.35079 				 ARPE: 9.44222
+MAD_chest_circumference:  108.92285 	 RPE_chest_circumference:  10.82914
+MAD_height: 100.83018 			 RPE_height: 5.89163
+MAD_inseam 71.73681 			 RPE_inseam 10.13399
+MAD_left_arm_length 37.72707 		 RPE_left_arm_length 6.64034
+MAD_pelvis_circumference: 100.49660 	 RPE_pelvis_circumference: 9.81657
+MAD_right_arm_length 38.59546 		 RPE_right_arm_length 6.70874
+MAD_shoulder_width 28.61749 		 RPE_shoulder_width 9.39022
+MAD_waist_circumference 131.87984 	 RPE_waist_circumference 16.12711
+
+
+Prediction:
+
+-----------------------------------------------
+male, 0994, pose 0:
+actual:
+tensor([1.0934, 1.7889, 0.8334, 0.5937, 1.0440, 0.6049, 0.4113, 0.9877])
+predicted:
+tensor([[0.8917, 1.7449, 0.8253, 0.5855, 0.8449, 0.5779, 0.3644, 0.6992]],
+       grad_fn=<AddmmBackward0>)
+-----------------------------------------------
+-----------------------------------------------
+male, 2853, pose 0:
+actual:
+tensor([0.9863, 1.8210, 0.8497, 0.6472, 0.9692, 0.6594, 0.3585, 0.7974])
+predicted:
+tensor([[1.0167, 1.6735, 0.7039, 0.5591, 1.0430, 0.5859, 0.3756, 0.8276]],
+       grad_fn=<AddmmBackward0>)
+-----------------------------------------------
+-----------------------------------------------
+male, 1104, pose 1:
+actual:
+tensor([1.2080, 1.9057, 0.8239, 0.6268, 1.1677, 0.6399, 0.4720, 1.0567])
+predicted:
+tensor([[1.1962, 1.9203, 0.8410, 0.6071, 1.1811, 0.6454, 0.4318, 1.0600]],
+       grad_fn=<AddmmBackward0>)
+-----------------------------------------------
+-----------------------------------------------
+male, 0412, pose 1:
+actual:
+tensor([1.1044, 1.6337, 0.5768, 0.5275, 1.2979, 0.5311, 0.3658, 1.0108])
+predicted:
+tensor([[1.1282, 1.6798, 0.6673, 0.5709, 1.2486, 0.5830, 0.3813, 1.0081]],
+       grad_fn=<AddmmBackward0>)
+-----------------------------------------------

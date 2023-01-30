@@ -1,0 +1,47 @@
+CNN trained with "one color" dataset.
+For testing purposes only 2000 random meshes are used.
+
+
+Basic result for prediction/actual looks like follows:
+-----------------------------------------------
+mash: 8711
+actual:      tensor([1.1996, 1.4833, 0.4071, 0.4640, 1.2787, 0.4728, 0.3795, 1.0351])
+predicted:   tensor([1.1559, 1.5952, 0.6063, 0.5601, 1.3865, 0.6095, 0.3334, 1.2777])
+-----------------------------------------------
+
+
+1. Median for each of 8 params by testing with the "one color" dataset
+
+Median chest circ: 0.027951687574386597
+Median height: 0.04951983690261841
+Median inseam: 0.035587191581726074
+Median left arm length: 0.01949438452720642
+Median pelvis circ: 0.03427395224571228
+Median right arm length: 0.020878836512565613
+Median shoulder width: 0.01456993818283081
+Median waist circ: 0.030307143926620483
+
+
+2. Median for each of 8 params by testing with the "plain" dataset
+
+Median chest circ: 0.16761285066604614
+Median height: 0.16663646697998047
+Median inseam: 0.11893531680107117
+Median left arm length: 0.0740249752998352
+Median pelvis circ: 0.17241895198822021
+Median right arm length: 0.10213068127632141
+Median shoulder width: 0.04687616229057312
+Median waist circ: 0.19952523708343506
+
+
+3. Median for each of 8 params by testing with the "jeans" dataset
+
+Median chest circ: 0.16585767269134521
+Median height: 0.1527298092842102
+Median inseam: 0.1396692991256714
+Median left arm length: 0.05643349885940552
+Median pelvis circ: 0.1652665138244629
+Median right arm length: 0.0551353394985199
+Median shoulder width: 0.05622546374797821
+Median waist circ: 0.27283382415771484
+
