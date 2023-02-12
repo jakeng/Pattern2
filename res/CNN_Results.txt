@@ -1,0 +1,222 @@
+Datasets
+
+Plain image train dataset: 10000
+Plain image test dataset: 2000
+
+One colour train dataset: 10000
+One colour test dataset: 2000
+
+Texture train dataset: 10000
+Texture test dataset: 2000
+
+Overall: 3 trained CNNs based on different training datasets
+
+
+Results
+
+CNN trained with:
+
+One colour train dataset
+
+CNN tested with:
+
+One colour test dataset
+
+MAD chest circ: 0.06
+MAD height: 0.06
+MAD inseam: 0.04
+MAD left arm length: 0.02
+MAD pelvis circ: 0.05
+MAD right arm length: 0.02
+MAD shoulder width: 0.02
+MAD waist circ: 0.08
+
+RPE chest circ: 6.83
+RPE height: 4.27
+RPE inseam: 7.4
+RPE left arm length: 5.16
+RPE pelvis circ: 6.31
+RPE right arm length: 4.82
+RPE shoulder width: 5.97
+RPE waist circ: 10.8
+
+
+Plain image dataset:
+
+MAD chest circ: 0.13
+MAD height: 0.15
+MAD inseam: 0.08
+MAD left arm length: 0.05
+MAD pelvis circ: 0.11
+MAD right arm length: 0.05
+MAD shoulder width: 0.04
+MAD waist circ: 0.13
+
+RPE chest circ: 10.04
+RPE height: 6.28
+RPE inseam: 8.39
+RPE left arm length: 6.88
+RPE pelvis circ: 10.56
+RPE right arm length: 6.11
+RPE shoulder width: 8.36
+RPE waist circ: 15.41
+
+
+Texture image dataset:
+
+MAD chest circ: 0.06
+MAD height: 0.06
+MAD inseam: 0.05
+MAD left arm length: 0.02
+MAD pelvis circ: 0.06
+MAD right arm length: 0.03
+MAD shoulder width: 0.03
+MAD waist circ: 0.08
+
+RPE chest circ: 8.81
+RPE height: 5.44
+RPE inseam: 9.57
+RPE left arm length: 6.44
+RPE pelvis circ: 8.79
+RPE right arm length: 5.83
+RPE shoulder width: 5.92
+RPE waist circ: 13.18
+
+============================
+
+CNN trained with:
+
+Plain image train dataset
+
+CNN tested with:
+
+One colour image dataset:
+
+MAD chest circ: 0.09
+MAD height: 0.09
+MAD inseam: 0.07
+MAD left arm length: 0.04
+MAD pelvis circ: 0.08
+MAD right arm length: 0.04
+MAD shoulder width: 0.03
+MAD waist circ: 0.11
+
+RPE chest circ: 11.47
+RPE height: 7.22
+RPE inseam: 13.5
+RPE left arm length: 9.08
+RPE pelvis circ: 10.87
+RPE right arm length: 8.38
+RPE shoulder width: 10.09
+RPE waist circ: 18.7
+
+Plain image dataset:
+
+MAD chest circ: 0.06
+MAD height: 0.05
+MAD inseam: 0.04
+MAD left arm length: 0.02
+MAD pelvis circ: 0.05
+MAD right arm length: 0.02
+MAD shoulder width: 0.02
+MAD waist circ: 0.08
+
+RPE chest circ: 6.31
+RPE height: 3.74
+RPE inseam: 6.81
+RPE left arm length: 4.59
+RPE pelvis circ: 5.8
+RPE right arm length: 4.41
+RPE shoulder width: 5.51
+RPE waist circ: 9.76
+
+Texture image dataset:
+
+MAD chest circ: 0.07
+MAD height: 0.07
+MAD inseam: 0.05
+MAD left arm length: 0.04
+MAD pelvis circ: 0.07
+MAD right arm length: 0.03
+MAD shoulder width: 0.03
+MAD waist circ: 0.09
+
+RPE chest circ: 10.17
+RPE height: 6.17
+RPE inseam: 9.97
+RPE left arm length: 6.7
+RPE pelvis circ: 10.4
+RPE right arm length: 7.71
+RPE shoulder width: 10.41
+RPE waist circ: 18.68
+
+============================
+
+CNN trained with:
+
+Texture image train dataset
+
+CNN tested with:
+
+One colour image dataset:
+
+MAD chest circ: 0.06
+MAD height: 0.06
+MAD inseam: 0.05
+MAD left arm length: 0.02
+MAD pelvis circ: 0.06
+MAD right arm length: 0.02
+MAD shoulder width: 0.02
+MAD waist circ: 0.08
+
+RPE chest circ: 10.3
+RPE height: 6.36
+RPE inseam: 10.26
+RPE left arm length: 7.06
+RPE pelvis circ: 9.26
+RPE right arm length: 6.79
+RPE shoulder width: 8.0
+RPE waist circ: 16.18
+
+Plain image dataset:
+
+MAD chest circ: 0.06
+MAD height: 0.06
+MAD inseam: 0.05
+MAD left arm length: 0.02
+MAD pelvis circ: 0.06
+MAD right arm length: 0.02
+MAD shoulder width: 0.02
+MAD waist circ: 0.08
+
+RPE chest circ: 10.18
+RPE height: 6.45
+RPE inseam: 10.32
+RPE left arm length: 7.15
+RPE pelvis circ: 9.23
+RPE right arm length: 6.8
+RPE shoulder width: 7.9
+RPE waist circ: 15.84
+
+Texture image dataset:
+
+MAD chest circ: 0.06
+MAD height: 0.06
+MAD inseam: 0.05
+MAD left arm length: 0.02
+MAD pelvis circ: 0.06
+MAD right arm length: 0.02
+MAD shoulder width: 0.02
+MAD waist circ: 0.08
+
+RPE chest circ: 10.11
+RPE height: 6.38
+RPE inseam: 10.57
+RPE left arm length: 6.98
+RPE pelvis circ: 9.22
+RPE right arm length: 6.74
+RPE shoulder width: 7.86
+RPE waist circ: 16.16
+
+
+
